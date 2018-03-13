@@ -18,7 +18,7 @@ def gui():
 
     root = Tk()
     root["bg"] = "honeydew"
-    root.title('Лабораторна робота №4 (Метод половинного ділення)')
+    root.title('Лабораторна робота №4 (Метод половинного ділення). Корінь рівняння: 1.180')
     root.geometry('830x320')
     x1 = (root.winfo_screenwidth() - root.winfo_reqwidth()) / 2
     y1 = (root.winfo_screenheight() - root.winfo_reqheight()) / 2

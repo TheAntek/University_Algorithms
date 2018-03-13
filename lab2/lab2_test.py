@@ -12,11 +12,20 @@ def selection_sort(ar):
     return ar
 
 
+def bubble_sort(arr):
+    for i in range(len(arr)):
+        for j in range(len(arr) - 1, i, -1):
+            if arr[j] < arr[j-1]:
+                arr[j], arr[j-1] = arr[j-1], arr[j]
+    return arr
+
+
 size = 1000
-for i in range(10):
+for z in range(10):
     apple = [random.randint(0, 1000) for k in range(size)]
     time_start = time.clock()
-    selection_sort(apple)
+    # selection_sort(apple)
+    bubble_sort(apple)
     time_end = time.clock()
     print('Размер: {}. Время: {}. Елем/cек: {}'.format(size, time_end-time_start, size/(time_end-time_start)))
     size += 1000
